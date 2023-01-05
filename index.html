@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>CONCORD</title>
+    </head>
+    <body>
+        <header>
+            <h1>CONCORD</h1>
+            <div id="profile">
+            </div>
+        </header>
+        <div id="menu" style="display:none">
+            Username<br><input type="text" id ="username_login" placeholder="username"><br>
+            Password<br><input type="text" id ="password_login" placeholder="password"><br>
+            <input type="button" id="login" value="LOGIN" onclick="login()"><br>
+            <input type="button" id="newuser" value="NEW USER" onclick="userForm()">
+            <div id="alertbox">
+
+            </div>
+        </div>
+        <div id="signup" style="display:none">
+            <h2>New User</h2>
+            Username<br><input type="text" id ="username" placeholder="username"><br>
+            Password<br><input type="text" id ="password" placeholder="password"><br>
+            Name<br><input type="text" id="name" placeholder="name"><br>
+            Avatar URL<br><input type="text" id="avatar" placeholder ="Avatar URL"><br>
+            <input type="button" id="sign" value="sign up" onclick="signUp()">
+            <div id="alertbox2">
+
+            </div>
+        </div>
+        <div id="rooms" style="display:none">
+            <h2>Rooms</h2>
+            <div id="roomlist">
+
+            </div>
+            <input type="button" id="addroom" value="Add room" onclick="addRoomPage()">
+        </div>
+        <div id="selectedroom" style="display:none">
+        </div>
+        <div id="addroompage" style="display:none">
+            Room name<br><input type="text" id="room_name" placeholder="Room name"><br>
+            <input type="button" id="submitroom" value="ok" onclick="addRoom()">
+            <div id="alertbox3">
+
+            </div>
+        </div>  
+        <div id="myprofile" style="display:none">
+            <h2>Profile</h2>
+            <div id="profileshow">
+
+            </div>
+            <div id="editprofile">
+
+            </div>
+            <div id="alertbox4">
+
+            </div>
+        </div>
+        <input type="button" id="goback" value="Go back" onclick="location.reload()">
+        <script type="text/javascript" src="funcoes.js"></script>
+    </body>
+</html>
